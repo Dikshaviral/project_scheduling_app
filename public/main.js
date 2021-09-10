@@ -1,7 +1,7 @@
 const taskEl = document.querySelector('#tasks');
 
 const getTasks = async() => {
-    const res = await fetch('https://project-scheduling-app.herokuapp.com');
+    const res = await fetch('https://project-scheduling-app.herokuapp.com/tasks');
     const data = await res.json();
     return data;
 }
